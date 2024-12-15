@@ -12,5 +12,6 @@ app.use(
     // exposedHeaders: ['Set-Cookie']
   })
 );
+app.use(express.json({ limit: "16kb" }));
 
 export { app };
